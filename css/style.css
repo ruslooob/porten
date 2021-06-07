@@ -350,6 +350,7 @@ body {
           justify-content: center;
   font-size: 18px;
   font-weight: 700;
+  cursor: pointer;
 }
 
 .products__item {
@@ -367,6 +368,8 @@ body {
   margin: 45px 10px;
   padding: 45px 10px;
   background-color: #191b1c;
+  -webkit-transition: background-color 0.3s linear;
+  transition: background-color 0.3s linear;
 }
 
 .products__item div {
@@ -380,4 +383,14 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-transition: color 0.3s linear;
+  transition: color 0.3s linear;
+}
+
+.products__item:hover .products__item-img {
+  background-color: gray;
+}
+
+.products__item:hover .products__item-text {
+  color: red;
 }
