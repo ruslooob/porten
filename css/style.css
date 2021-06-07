@@ -3,6 +3,7 @@ body {
   font-weight: 400;
   font-size: 14px;
   overflow-x: hidden;
+  color: white;
 }
 
 .container {
@@ -466,6 +467,7 @@ body {
   -webkit-transition: color 0.3s linear, background-color 0.3s linear;
   transition: color 0.3s linear, background-color 0.3s linear;
   border: 1px solid white;
+  text-transform: uppercase;
 }
 
 .old-collection__btn:hover {
@@ -570,4 +572,98 @@ body {
           justify-content: center;
   margin-top: 50px;
   cursor: pointer;
+}
+
+.info {
+  background-image: url("../img/glass.jpg");
+  height: 400px;
+}
+
+.info__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.info__about, .info__categories, .info__mail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 350px;
+}
+
+.info__title {
+  font-family: "Playfair Display";
+  font-size: 24px;
+  text-transform: uppercase;
+  margin-top: 70px;
+  margin-bottom: 35px;
+}
+
+.info__buttons .btn {
+  padding: 18px;
+  background-color: #0f0f0f;
+  color: lightgray;
+  cursor: pointer;
+  text-transform: uppercase;
+  border: 0;
+  margin-top: 15px;
+  -webkit-transition: background-color 0.3s linear, color 0.3s linear;
+  transition: background-color 0.3s linear, color 0.3s linear;
+}
+
+.info__buttons .btn:hover {
+  background-color: lightgray;
+  color: #0f0f0f;
+}
+
+.info__subscribe {
+  margin-top: 20px;
+}
+
+.info__subscribe input[type="text"] {
+  padding-left: 15px;
+  height: 42px;
+  width: 60%;
+  background-color: lightgray;
+}
+
+.info__subscribe input[type="submit"] {
+  padding: 18px;
+  background-color: #0f0f0f;
+  color: lightgray;
+  border: 0;
+  -webkit-transition: background-color 0.3s linear, color 0.3s linear;
+  transition: background-color 0.3s linear, color 0.3s linear;
+}
+
+.info__subscribe input[type="submit"]:hover {
+  background-color: lightgray;
+  color: #0f0f0f;
+}
+
+.footer {
+  height: 100%;
+  width: 1170px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer__wrapper {
+  height: 50px;
+  background-color: #0f0f0f;
+  margin: 0 auto;
 }

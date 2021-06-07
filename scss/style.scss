@@ -3,6 +3,7 @@ body {
 	font-weight: 400;
 	font-size: 14px;
 	overflow-x: hidden;
+	color: white;
 }
 
 .container {
@@ -394,6 +395,7 @@ body {
 		padding: 10px 15px;
 		transition: color 0.3s linear, background-color 0.3s linear;
 		border: 1px solid white;
+		text-transform: uppercase;
 		&:hover {
 			color: black;
 			background-color: #fff;
@@ -476,4 +478,78 @@ body {
 		margin-top: 50px;
 		cursor: pointer;
 	}
+}
+
+.info {
+	background-image: url("../img/glass.jpg");
+	height: 400px;
+	&__wrapper {
+		display: flex;
+		justify-content: space-around;
+		max-width: 1170px;
+		margin: 0 auto;
+	}
+	&__about,
+	&__categories,
+	&__mail {
+		display: flex;
+		flex-direction: column;
+		max-width: 350px;
+	}
+
+	&__title {
+		font-family: "Playfair Display";
+		font-size: 24px;
+		text-transform: uppercase;
+		margin-top: 70px;
+		margin-bottom: 35px;
+	}
+	&__buttons .btn {
+		padding: 18px;
+		background-color: #0f0f0f;
+		color: lightgray;
+		cursor: pointer;
+		text-transform: uppercase;
+		border: 0;
+		margin-top: 15px;
+		transition: background-color 0.3s linear, color 0.3s linear;
+		&:hover {
+			background-color: lightgray;
+			color: #0f0f0f;
+		}
+	}
+	&__subscribe {
+		margin-top: 20px;
+		input[type="text"] {
+			padding-left: 15px;
+			height: 42px;
+			width: 60%;
+			background-color: lightgray;
+		}
+		input[type="submit"] {
+			padding: 18px;
+			background-color: #0f0f0f;
+			color: lightgray;
+			border: 0;
+			transition: background-color 0.3s linear, color 0.3s linear;
+			&:hover {
+				background-color: lightgray;
+				color: #0f0f0f;
+			}
+		}
+	}
+}
+
+.footer {
+	height: 100%;
+	&__wrapper {
+		height: 50px;
+
+		background-color: #0f0f0f;
+		margin: 0 auto;
+	}
+	width: 1170px;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
 }
