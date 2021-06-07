@@ -276,7 +276,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 100%;
+  width: 122%;
   height: 100%;
   background-color: black;
 }
@@ -345,6 +345,8 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -469,4 +471,103 @@ body {
 .old-collection__btn:hover {
   color: black;
   background-color: #fff;
+}
+
+.new-products {
+  color: white;
+  background-color: #000;
+}
+
+.new-products__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 1170px;
+  margin: 0 auto;
+}
+
+.new-products__title {
+  font-family: "Playfair Display";
+  font-size: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-top: 50px;
+  position: relative;
+}
+
+.new-products__title:after {
+  position: absolute;
+  content: "";
+  top: 100%;
+  left: 0;
+  background-color: white;
+  width: 33.3%;
+  height: 1px;
+  margin-left: calc((100% - 33.33%) / 2);
+  margin-top: 30px;
+}
+
+.new-products .products {
+  margin-top: 40px;
+  margin-bottom: 50px;
+}
+
+.new-products .products .products__item {
+  width: inherit;
+}
+
+.our-brands__wrapper {
+  background-color: #0f0f0f;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.our-brands__title {
+  font-family: "Playfair Display";
+  font-size: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: white;
+  position: relative;
+  margin-top: 30px;
+}
+
+.our-brands__title:after {
+  position: absolute;
+  content: "";
+  top: 100%;
+  left: 0;
+  width: 50%;
+  height: 1px;
+  background-color: #fff;
+  margin-left: calc((100% - 50%) / 2);
+  margin-top: 40px;
+}
+
+.our-brands__brands {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 50px;
+  cursor: pointer;
 }
