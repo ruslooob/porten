@@ -33,11 +33,33 @@ body {
 				margin: 0 14px;
 			}
 
+			.tel a {
+				position: relative;
+			}
+
 			.tel::before {
 				content: url("../img/phone.svg");
 				position: relative;
 				top: 5px;
 				right: 0;
+			}
+
+			.tel a::after {
+				content: "";
+				position: absolute;
+				left: 0;
+				top: 110%;
+				opacity: 0;
+
+				height: 1px;
+				width: 100%;
+				background-color: white;
+
+				transition: opacity 0.3s linear;
+			}
+
+			.tel a:hover::after {
+				opacity: 1;
 			}
 		}
 		.header-up__right {
@@ -46,6 +68,25 @@ body {
 				position: relative;
 				top: 3px;
 				margin-right: 14px;
+			}
+
+			& span a {
+				position: relative;
+				&::after {
+					content: "";
+					left: 0;
+					top: 110%;
+
+					position: absolute;
+					height: 1px;
+					width: 100%;
+					background-color: white;
+					opacity: 0;
+					transition: opacity 0.3s linear;
+				}
+				&:hover::after {
+					opacity: 1;
+				}
 			}
 		}
 		// для всех ссылок в header-up
@@ -78,6 +119,24 @@ body {
 			font-family: "Montserrat";
 			font-size: 36px;
 			font-weight: 700;
+			position: relative;
+
+			&::after {
+				height: 2px;
+				width: 100%;
+				background-color: #fff;
+				opacity: 0;
+				position: absolute;
+				left: 0;
+				top: 110%;
+
+				content: "";
+
+				transition: opacity 0.5s linear;
+			}
+			&:hover::after {
+				opacity: 1;
+			}
 		}
 
 		&__navs {
@@ -102,8 +161,10 @@ body {
 
 		&__shop:hover,
 		&__find:hover {
-			border: 5px solid white;
-			background: gray;
+			padding: 3px;
+
+			border-radius: 100%;
+			background-color: gray;
 			color: white;
 		}
 		a {
@@ -120,12 +181,6 @@ body {
 	background-position: 50% 0;
 	background-size: cover;
 
-	// display: flex;
-	// flex-direction: column;
-	// align-items: center;
-	// justify-content: space-around;
-
-	// width: 100vw;
 	height: 80.2vh;
 
 	color: white;
